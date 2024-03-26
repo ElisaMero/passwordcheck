@@ -1,0 +1,17 @@
+body {
+
+    background-color: rgb(234, 252, 234);
+    margin: auto;
+    max-width: 800px;
+}
+
+.fonts p {
+
+    color: rgb(97, 145, 97);
+    font-size: 22px;
+}
+
+.fonts h1 {
+
+    color: rgb(97, 145, 97);
+}

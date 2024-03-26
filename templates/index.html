@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Passwordchecker</title>
+
+</head>
+
+<body>
+
+
+    {% if same_name %}
+    <script>
+        alert("Password ok!");
+    </script>
+    {% endif %}
+
+    {% if not same_name %}
+    <script>
+        alert("Password not secure");
+    </script>
+    {% endif %}
+
+    <div class="fonts">
+        <h1>Passwordchecker &#128272;</h1>
+
+        <p>Is your password secure? In here you can test it!
+        </p>
+        <br>
+        <form action="/try" method="post">
+            <div class="user_info">
+                <p>Password:</p>
+                <input type="password" name="password" required>
+                <input type="submit" value="Submit">
+            </div>
+    </div>
+
+</body>
